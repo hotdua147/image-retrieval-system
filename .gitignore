@@ -1,0 +1,62 @@
+# ==============================================================================
+# DATA AND DATASETS
+# ==============================================================================
+# Ignore all files in data directory except for .gitkeep files to preserve structure
+data/**/*
+!data/**/.gitkeep
+
+# Specifically ignore large raw images and processed embeddings
+data/raw/*
+data/embeddings/*
+*.index
+*.npy
+*.pkl
+
+# ==============================================================================
+# MODELS AND CHECKPOINTS
+# ==============================================================================
+# Ignore local model weights, checkpoints, and downloaded binaries
+models/
+checkpoints/
+*.pth
+*.bin
+*.h5
+
+# ==============================================================================
+# CONFIGURATIONS
+# ==============================================================================
+# If your main config contains local absolute paths, you might want to ignore it
+# and provide a template (e.g., config.yaml.example) instead.
+# configs/config.yaml
+
+# ==============================================================================
+# PYTHON ENVIRONMENT AND ARTIFACTS
+# ==============================================================================
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment variables (API keys, local paths)
+.env
+
+# ==============================================================================
+# IDE AND SYSTEM FILES
+# ==============================================================================
+.vscode/
+.idea/
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+
+# ==============================================================================
+# LOGS AND EVALUATION OUTPUTS
+# ==============================================================================
+logs/
+results/
+*.log

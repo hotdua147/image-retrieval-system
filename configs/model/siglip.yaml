@@ -1,0 +1,22 @@
+# Configuration for SigLIP (Sigmoid Language-Image Pre-training)
+model:
+  name: "siglip"
+  model_id: "google/siglip-base-patch16-224"
+  
+  # SigLIP Base-P16 uses 768 dimensions (CLIP ViT-B/32 uses 512)
+  embedding_dim: 768 
+  
+  # Inference settings
+  batch_size: 32
+  device: "cuda" # or "cpu"
+
+preprocessing:
+  image_size: 224
+  # Standard normalization for Vision Transformers
+  mean: [0.5, 0.5, 0.5]
+  std: [0.5, 0.5, 0.5]
+  interpolation: "bicubic"
+
+metadata:
+  description: "SigLIP model for improved retrieval performance using Sigmoid loss."
+  version: "1.0.0"

@@ -1,0 +1,27 @@
++# --- Core AI/ML Frameworks ---
+torch==2.9.1
+torchvision==0.24.1
+transformers==4.57.3
+safetensors==0.7.0
+
+# --- Vector Search ---
+faiss-cpu==1.13.2
+
+# --- Dataset & Image Processing ---
+datasets==2.21.0
+pillow==12.0.0
+opencv-python-headless==4.12.0.88
+numpy==2.2.6
+
+# --- Web Interface & UI ---
+streamlit==1.52.2
+matplotlib==3.10.8
+tqdm==4.67.1
+
+# --- Configuration & Utilities ---
+PyYAML==6.0.3
+python-dotenv==1.2.1
+
+#SigLip
+sentencepiece
+protobuf
